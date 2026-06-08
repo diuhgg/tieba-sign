@@ -2,6 +2,12 @@
 
 一个多用户、服务器端执行的百度贴吧签到控制台。用户手动填写 `BDUSS`，系统自动获取关注贴吧，用户确认后再执行签到。
 
+## 截图
+<img width="2552" height="1308" alt="image-20260608093820830" src="https://github.com/user-attachments/assets/8bc1e1c4-27ad-4a36-9a4d-dc495c5f3d0e" />
+<img width="2552" height="1308" alt="image-20260608093654304" src="https://github.com/user-attachments/assets/01bd5b88-8924-4807-91b5-22f004eba818" />
+<img width="2552" height="1308" alt="image-20260608093525812" src="https://github.com/user-attachments/assets/af02466a-e5d3-4337-b559-b2aef491491a" />
+
+
 ## 功能
 
 - 用户注册、登录、退出
