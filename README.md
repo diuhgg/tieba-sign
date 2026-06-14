@@ -4,6 +4,13 @@
 
 当前版本：`v1.0.1`
 
+## 截图
+<img width="2552" height="1308" alt="image-20260608093525812" src="https://github.com/user-attachments/assets/af02466a-e5d3-4337-b559-b2aef491491a" />
+
+<img width="2552" height="1308" alt="image-20260608093654304" src="https://github.com/user-attachments/assets/01bd5b88-8924-4807-91b5-22f004eba818" />
+
+<img width="2552" height="1308" alt="image-20260608093820830" src="https://github.com/user-attachments/assets/8bc1e1c4-27ad-4a36-9a4d-dc495c5f3d0e" />
+
 ## 功能特性
 
 ### 用户功能
@@ -83,19 +90,7 @@ python3 app.py
 http://127.0.0.1:8000
 ```
 
-## 环境变量
-
-可通过环境变量调整运行配置：
-
-| 变量 | 默认值 | 说明 |
-| --- | --- | --- |
-| `HOST` | `127.0.0.1` | 服务监听地址 |
-| `PORT` | `8000` | 服务监听端口 |
-| `APP_SECRET` | 空 | 用于加密 `BDUSS` 的固定密钥 |
-| `SIGN_DELAY_MIN` | `0.2` | 单个贴吧签到最小间隔秒数 |
-| `SIGN_DELAY_MAX` | `0.8` | 单个贴吧签到最大间隔秒数 |
-
-示例：
+可用环境变量：
 
 ```bash
 HOST=0.0.0.0 PORT=8000 APP_SECRET='change-me' SIGN_DELAY_MIN=0.2 SIGN_DELAY_MAX=0.8 python3 app.py
@@ -519,12 +514,7 @@ tieba.db
 
 ## 安全边界
 
-本项目只做自动化签到，不提供也不会尝试：
-
-- 百度账号密码登录
-- 验证码识别
-- 风控绕过
-- 异常登录处理
-- 批量撞库或账号测试
-
-当百度返回验证码、风控、账号异常或 `BDUSS` 失效时，系统会暂停相关账号，需要用户自行处理后再恢复。
+- 不保存百度明文密码
+- 不绕过验证码
+- 不处理异常登录风控
+- 账号触发验证码或风控后暂停，等待用户处理
