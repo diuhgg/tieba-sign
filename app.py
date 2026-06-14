@@ -26,9 +26,9 @@ DB_PATH = BASE_DIR / "tieba.db"
 SECRET_PATH = BASE_DIR / ".app_secret"
 HOST = os.getenv("HOST", "127.0.0.1")
 PORT = int(os.getenv("PORT", "8000"))
-SIGN_DELAY_MIN = float(os.getenv("SIGN_DELAY_MIN", "0.2"))
-SIGN_DELAY_MAX = float(os.getenv("SIGN_DELAY_MAX", "0.8"))
-APP_VERSION = "v1.0.1"
+SIGN_DELAY_MIN = float(os.getenv("SIGN_DELAY_MIN", "0.8"))
+SIGN_DELAY_MAX = float(os.getenv("SIGN_DELAY_MAX", "1.8"))
+APP_VERSION = "v1.0.3"
 if SIGN_DELAY_MAX < SIGN_DELAY_MIN:
     SIGN_DELAY_MIN, SIGN_DELAY_MAX = SIGN_DELAY_MAX, SIGN_DELAY_MIN
 
